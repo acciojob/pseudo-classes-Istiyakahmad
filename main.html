@@ -1,33 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pseudo Classes</title>
+    <style>
+        :root {
+            background-color: rgb(135, 206, 235);
+        }
+
+        article p:first-child {
+            color: white;
+            background-color: black;
+        }
+
+        article p:nth-child(2) {
+            color: black;
+        }
+
+        article p:last-child {
+            color: red;
+        }
+
+        ul li {
+            background-color: gray;
+            width: 50%;
+            padding: 10px;
+        }
+
+        ul li:nth-child(odd) {
+            background-color: white;
+        }
+
+        ul li:first-child,
+        ul li:last-child {
+            font-size: 22px;
+        }
+
+        ul li:nth-last-child(3) {
+            background-color: pink;
+        }
+    </style>
+</head>
 <body>
-  <div class="container">
-    <div class="card">
-      <h3>First paragraph</h3>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-        dis parturient montes.
-      </p>
+    <article>
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <p>Third paragraph</p>
+    </article>
 
-      <p>
-        Nulla facilisi. Cras dapibus. Vivamus elementum semper nisi. Aenean
-        vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-        vitae.
-      </p>
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+        <li>Fourth item</li>
+        <li>Fifth item</li>
+    </ul>
 
-      <p class="highlight">
-        Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum
-        rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
-        Nam quam nunc.
-      </p>
-
-      <ul>
-        <li class="dark">First Item</li>
-        <li class="light">Second Item</li>
-        <li class="pink">Third Item</li>
-        <li class="dark">Fourth Item</li>
-        <li class="light">Fifth Item</li>
-      </ul>
-    </div>
-  </div>
 </body>
+</html>
